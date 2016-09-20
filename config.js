@@ -11,14 +11,18 @@ System.config({
   },
 
   map: {
-    'jquery': 'npm:jquery/dist/jquery.js',
+    'jquery': '//code.jquery.com/jquery-2.1.4.min.js',
     'typescript': 'npm:typescript/lib/typescript.js',
+    'materialize': 'npm:materialize-css/bin/materialize.js'
   },
 
   meta: {
     'jquery': {
       format: 'global',
-      exports: 'jQuery'
+      exports: '$'
+    },
+    'materialize': {
+      format: 'global'
     }
   }
 });
