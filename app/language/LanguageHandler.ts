@@ -8,4 +8,7 @@ export module LanguageHandler {
     export function GetLanguageById(id: string) {
         return languages.filter((language) => language.id == id)[0];
     }
+    export function GetLanguageIds(): String[] {
+        return languages.map((language) => { return language.id; });
+    }
 }

@@ -1,0 +1,9 @@
+#output, #input{
+    min-height:300px;
+}
+#output{
+    margin-top:30px;
+}
+.container{
+    margin-top:20px;
+}
