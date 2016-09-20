@@ -1,16 +1,16 @@
 import {ILanguage} from './Language';
 import {LanguageHandler} from './LanguageHandler';
 export interface ILanguageTranslator {
-    To(id: string): string;
+    To(id: string): String;
 }
 
-export class LanguageTranslator {
+export class LanguageTranslator implements ILanguageTranslator {
     toLanguage: ILanguage;
     input: String;
     constructor(input: String, public fromLanguage: ILanguage) {
         this.input = input.toLowerCase();
     }
-    To(id: string) {
+    To(id: string): String {
         this.toLanguage = LanguageHandler.GetLanguageById(id);
 
         // Probably overcomplicated algorithm
@@ -18,7 +18,7 @@ export class LanguageTranslator {
             let replaceTo: string = Object.keys(this.toLanguage.data).map((key) => {
                 return this.toLanguage.data[key] === this.fromLanguage.data[propertyName] ? key : "";
             }).filter(key => { return key !== "" })[0];
-            
+
             this.input = this.input.replace(propertyName, replaceTo);
         });
 
