@@ -18,5 +18,6 @@ LanguageHandler.Register(new Language("Wiichaeller", {
     "s/o": "einebemerkung",
     "admin": "administrator",
     "lit": "cool",
-    "isch": "ist"
+    "isch": "ist",
+    "hurisohn": "hurensohn"
 }));
