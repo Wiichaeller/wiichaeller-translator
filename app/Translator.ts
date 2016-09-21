@@ -3,8 +3,8 @@ import './data/languages/Wiichaeller';
 import './data/languages/Deutsch';
 
 export module Translator {
-    export function Translate(input: string, inputLanguage: string, outputLanguage: string): string {
-        var output: string = input.toLowerCase();
+    export function Translate(input: String, inputLanguage: String, outputLanguage: String): String {
+        var output: String = input.toLowerCase();
 
         output = LanguageHandler
             .GetLanguageById(inputLanguage)

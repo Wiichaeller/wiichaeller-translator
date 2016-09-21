@@ -5,7 +5,7 @@ export module LanguageHandler {
     export function Register(language: ILanguage) {
         languages.push(language);
     }
-    export function GetLanguageById(id: string) {
+    export function GetLanguageById(id: String) {
         return languages.filter((language) => language.id == id)[0];
     }
     export function GetLanguageIds(): String[] {

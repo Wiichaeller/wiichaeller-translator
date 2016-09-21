@@ -7,15 +7,25 @@
     "start": "live-server"
   },
   "dependencies": {
-    "jquery": "^3.1.0",
-    "materialize-css": "^0.97.7",
     "systemjs": "^0.19.17"
   },
   "devDependencies": {
     "es6-module-loader": "^0.17.10",
+    "gulp": "^3.9.1",
+    "gulp-jspm-build": "0.0.15",
+    "jspm": "^0.16.45",
     "live-server": "^0.9.1",
     "typescript": "^1.8.10"
   },
   "author": "Livio Brunner",
-  "license": "MIT"
+  "license": "MIT",
+  "jspm": {
+    "dependencies": {
+      "jquery": "npm:jquery@^3.1.0",
+      "materialize-css": "npm:materialize-css@^0.97.7"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
 }
