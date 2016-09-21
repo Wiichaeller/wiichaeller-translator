@@ -1,9 +1,19 @@
-#output, #input{
-    min-height:300px;
+#output,
+#input {
+    min-height: 300px;
 }
-#output{
-    margin-top:30px;
+
+#output {
+    margin-top: 30px;
 }
-.container{
-    margin-top:20px;
+
+.container {
+    margin-top: 20px;
+}
+
+@media(max-width:767px) {
+    #output,
+    #input {
+        min-height: 150px;
+    }
 }
